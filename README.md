@@ -21,11 +21,3 @@ Notes:
 - After it's unzipped, it should contain the project source code.
 - The program MUST run inside Docker. We will run your script using the following command:
 
-```shell
-unzip exercise.zip
-cd exercise
-docker build -t exercise .
-docker run -p 8000:8000 -v /path/to/exercise:/app exercise
-curl -d "rtsp_url=rtsp://platerec:8S5AZ7YasGc3m4@video.platerecognizer.com:8554/demo" http://localhost:8000/start
-curl http://localhost:8000/stop
-```
